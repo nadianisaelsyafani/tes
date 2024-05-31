@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card mt-3">
+            <div class="card-body text-center">
+                <h3>Biodata Karyawan</h3>
+            </div>
+          </div>
+            <table class="table mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">NRP</th>
+                    <th scope="col">Departemen</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Problem</th>
+                    <th scope="col">Hari</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                  <!-- <tr>
+                    <th>1</th>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Otto</td>
+                  </tr> -->
+                </tbody>
+            </table>
+        <!-- Modal Edit -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="editnama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="editnama" placeholder="Nama">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editnrp" class="form-label">NRP</label>
+                        <input type="text" class="form-control" id="editnrp" placeholder="NRP">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editdepartemen" class="form-label">Departemen</label>
+                        <input type="text" class="form-control" id="editdepartemen" placeholder="Departemen">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edituser" class="form-label">User yang ingin dihubungi</label>
+                        <fieldset>
+                            <select class="form-select" id="edituser">
+                            <option selected>--</option>
+                            <option value="M. Andi fariska  - Section Head ICT">1. M. Andi fariska  - Section Head ICT</option>
+                            <option value="⁠Hatta Fadilah - Network & Infra Officer">2. ⁠Hatta Fadilah - Network & Infra Officer</option>
+                            <option value="⁠Tim MBAP - IT Support">3. ⁠Tim MBAP - IT Support</option>
+                            <option value="Tim NBID - IT Support">4. Tim NBID - IT Support</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editproblem" class="form-label">Problem</label>
+                        <textarea class="form-control" id="editproblem" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="deleteRow('${childKey}')">Hapus Data</button>
+                <button type="button" class="btn btn-primary" >Simpan Data</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+</body>
+<!-- SCRIPT -->
+<script async type="module" src="cobaaja.js">
+    
+</script>
+</html>
